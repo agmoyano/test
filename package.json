@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "ci-test": "istanbul cover test.js > test.tap && istanbul report clover",
+    "test": "node test.js"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,11 @@
     "url": "https://github.com/agmoyano/test/issues"
   },
   "homepage": "https://github.com/agmoyano/test#readme",
-  "devDependencies": {
+  "dependencies": {
     "express": "^4.13.4"
+  },
+  "devDependencies": {
+    "request": "^2.69.0",
+    "tape": "^4.4.0"
   }
 }

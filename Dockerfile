@@ -7,6 +7,7 @@ RUN apt-get install -y nodejs
 RUN mkdir -p /opt/project
 WORKDIR /opt/project
 
-COPY package.json .
+COPY package.json /opt/project/
 RUN npm install
+COPY index.js /opt/project/
 CMD ["npm", "start"]
