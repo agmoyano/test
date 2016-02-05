@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "ci-test": "istanbul cover test.js > test.tap && istanbul report clover",
+    "ci-test": "istanbul cover tape \"test.js\" > test.tap && istanbul report clover",
     "test": "node test.js"
   },
   "repository": {
