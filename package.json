@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "ci-test": "./node_modules/istanbul/lib/bin cover --dir /report/coverage test.js > /report/test.tap && ./node_modules/istanbul/lib/bin report --dir /report/coverage clover",
+    "ci-test": "node ./node_modules/istanbul/lib/cli cover --dir /report/coverage test.js > /report/test.tap && node ./node_modules/istanbul/lib/cli report --dir /report/coverage clover",
     "test": "node test.js"
   },
   "repository": {
