@@ -19,18 +19,18 @@ test('/test2', function(t) {
     .expect(200)
     .end(function(err, res) {
       if(err) return t.end(err);
-      t.equal(res.text, 'hola', 'La respuesta debe ser igual a "hola"');
+      t.equal(res.text, 'hola!!!', 'La respuesta debe ser igual a "hola"');
       t.end();
     });
 });
 
-test('/test3', function(t) {
+test('/test4', function(t) {
   request(app)
-    .get('/test3')
+    .get('/test4')
     .expect(200)
     .end(function(err, res) {
       if(err) return t.end(err);
-      t.equal(res.text, 'hola', 'La respuesta debe ser igual a "hola"');
+      t.equal(res.text, 'holis', 'La respuesta debe ser igual a "hola"');
       t.end();
     });
 });
