@@ -11,4 +11,6 @@ app.get('/test2', function(req, res, next) {
 
 module.exports = app;
 
-app.listen(8081);
+console.log(process.env.NODE_ENV);
+
+if(process.env.NODE_ENV != 'ci-testing') app.listen(8081);
