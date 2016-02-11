@@ -6,7 +6,7 @@ test('/test', function(t) {
   request(app)
     .get('/test')
     .expect(200)
-    .expect('hola', t.end);
+    .expect('hola1', t.end);
 });
 
 test('/test2', function(t) {
