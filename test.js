@@ -30,7 +30,7 @@ test('/test4', function(t) {
     .expect(200)
     .end(function(err, res) {
       if(err) return t.end(err);
-      t.equal(res.text, 'holis', 'La respuesta debe ser igual a "hola"');
+      t.equal(res.text, 'holis!!', 'La respuesta debe ser igual a "hola"');
       t.end();
     });
 });
