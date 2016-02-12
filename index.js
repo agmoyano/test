@@ -10,7 +10,7 @@ app.get('/test2', function(req, res, next) {
 });
 
 app.get('/test4', function(req, res, next){
-  res.send('holis');
+  res.send('holis!!');
 })
 
 module.exports = app;
